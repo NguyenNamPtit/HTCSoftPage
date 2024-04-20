@@ -7,6 +7,9 @@ import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import MenuIcon from '@mui/icons-material/Menu';
 import Navbar from '../Navbar/Navbar';
+import appLogo from "../../assets/images/[Cell] Logo.png";
+import cartLogo from "../../assets/images/Cart.svg";
+import searchLogo from "../../assets/images/[Icon] user-line.svg";
 const Header = () => {
     const [shownavbar, setshownacbar] = useState(false);
     const handleShowNavbar = () => {
@@ -20,7 +23,7 @@ const Header = () => {
                         <div className='header-logo'  >
                             <MenuIcon className='icon-menu' onClick={handleShowNavbar} />
                             <Link to="">
-                                <img src={require('../../assets/images/[Cell] Logo.png')} alt='logo' />
+                                <img src={appLogo} alt='logo' />
                             </Link>
                         </div>
                         <div className='header-nav'>
@@ -57,11 +60,14 @@ const Header = () => {
                             <SearchIcon />
                         </div>
                         <div className='cart-icon'>
-                            <CardGiftcardIcon />
+                            <img src={cartLogo} style={{
+                                width: "40px !important",
+                            }} alt='logo' />
                         </div>
                         <div className='user-icon'>
-                            <PersonOutlineIcon />
+                            <img src={searchLogo} alt='logo' width={"24px"} />
                         </div>
+
                     </div>
                 </div>
             </div>

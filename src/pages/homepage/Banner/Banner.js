@@ -25,17 +25,25 @@ const Banner = () => {
             </div>
             <div className='banner-detail'>
                 <div className='list-item'>
-                    <div className='child-item-development'>
-                        <p className='title-detail'>— Development</p>
-                        <p className='content-detail'>With 6 years of experience working with Magento e-commerce platform, we are confident that we will help you to build your own Magento Store with full of preeminent features, superior management, absolute security website data.</p>
+                    <div className='one-child' style={{
+                        width: "40%",
+                        paddingLeft: "60px"
+                    }}>
+                        <div className='child-item-development'>
+                            <p className='title-detail'>— Development</p>
+                            <p className='content-detail'>With 6 years of experience working with Magento e-commerce platform, we are confident that we will help you to build your own Magento Store with full of preeminent features, superior management, absolute security website data.</p>
+                        </div>
                     </div>
-                    <div className='child-item-optimization'>
-                        <p className='title-detail-child'>— Optimization</p>
-                        <p className='content-detail-child'>Are you facing with problem about website efficiency? We are here to find your problem and solve them, make your website work better and faster.</p>
-                    </div>
-                    <div className='child-item-migration'>
-                        <p className='title-detail-child'>— Migration</p>
-                        <p className='content-detail-child'>The magento development team has officially terminated magento 1 support in 2020. Magento 1 users are facing security vulnerabilities. HTCMage is committed to helping you deploy it safely.</p>
+
+                    <div className='double-child'>
+                        <div className='child-item-optimization'>
+                            <p className='title-detail-child'>— Optimization</p>
+                            <p className='content-detail-child'>Are you facing with problem about website efficiency? We are here to find your problem and solve them, make your website work better and faster.</p>
+                        </div>
+                        <div className='child-item-migration'>
+                            <p className='title-detail-child'>— Migration</p>
+                            <p className='content-detail-child'>The magento development team has officially terminated magento 1 support in 2020. Magento 1 users are facing security vulnerabilities. HTCMage is committed to helping you deploy it safely.</p>
+                        </div>
                     </div>
                 </div>
             </div>
