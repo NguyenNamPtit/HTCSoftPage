@@ -89,7 +89,7 @@
 
 .logo-footer {
     display: flex;
-    width: 100%;
+
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -154,6 +154,10 @@
     padding: 15px 0px;
     align-items: flex-start;
     color: var(--primary-color);
+}
+
+.logo-footer {
+    flex: 1;
 }
 
 /*Tabnet*/
@@ -246,12 +250,14 @@
         gap: 0px;
 
     }
+
     .logo-footer-box {
 
         gap: 90px;
     }
 }
-@media only screen and (max-width:320px){
+
+@media only screen and (max-width:320px) {
     .logo-footer-box {
 
         gap: 20px;
