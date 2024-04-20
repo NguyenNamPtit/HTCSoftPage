@@ -1,0 +1,195 @@
+.header-main {
+    height: 80px;
+    z-index: 2;
+}
+
+.header-content {
+    display: flex;
+    padding: 20px 0;
+    height: 80px;
+    line-height: 80px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-box {
+
+    display: flex;
+    width: 1248px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.first-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.header-nav ul li:first-child {
+    display: flex;
+    padding: 12px 12px 12px 2px;
+    align-items: center;
+    gap: 4px;
+}
+
+.header-nav ul li:first-child span {
+    color: var(--button-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+
+    /* 114.286% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header-nav ul li:nth-child(2),
+.header-nav ul li:nth-child(3) {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    gap: 4px;
+}
+
+.header-nav ul li:nth-child(2),
+.header-nav ul li:nth-child(3) span {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+
+    /* 114.286% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.change-money {
+    display: flex;
+    padding: 12px 8px;
+    align-items: center;
+    gap: 4px;
+}
+
+.change-money span {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+
+    /* 114.286% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.text-change {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+
+    /* 114.286% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.search-icon,
+.cart-icon,
+.user-icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.header-logo svg {
+    display: none !important;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .header-box {
+
+        width: 927px;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-box {
+
+        width: 752px;
+
+    }
+
+    .header-logo {
+        display: flex;
+        gap: 10px;
+        padding-left: 15px;
+    }
+
+    .header-logo svg {
+        display: block !important;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    .change-money {
+        display: none;
+    }
+
+    .header-button {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-box {
+
+        width: 582px;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-box {
+
+        width: 582px;
+
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .header-box {
+
+        width: 303px;
+
+    }
+}
