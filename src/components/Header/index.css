@@ -1,0 +1,11 @@
+@keyframes input {
+    from{
+        width: 50px;
+    }
+    to{
+        width: 640px;
+    }
+}
+.animation{
+    animation: input 1s linear 
+}
